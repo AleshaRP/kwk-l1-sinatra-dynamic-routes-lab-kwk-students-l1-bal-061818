@@ -10,7 +10,7 @@ end
   end
   get '/say/:number/:phrase' do
     final_string = " "
-    get (params[:number].to_i).times do
+  get (params[:number].to_i).times do
     final_string = "#{params[:phrase]}"
   end
   final_string
